@@ -76,3 +76,12 @@ This is handy when using a development server that does not have a valid certifi
 
     # app/config/parameters.yml
     be_simple.sso_auth.client.option.curlopt_ssl_verifypeer.value: FALSE
+    
+If necessary, you can change curl sslversion.
+----------------------------------------------------------
+
+This is really necesary because in some cases this must be set manually or when the CAS server is refusing the connection. 
+Default is version 3.
+
+    # app/config/parameters.yml
+    be_simple.sso_auth.client.option.curlopt_sslversion.value: 3
